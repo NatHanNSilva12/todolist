@@ -1,0 +1,275 @@
+body {
+    background: #f2dd55;
+    width: 1300px;
+}
+
+.cap {
+    background: #d6cd24;
+    position: relative;
+    left: 15%;
+    height: 100%;
+    padding-bottom: 10px;
+    width: 85%;
+    margin-right: 0;
+}
+
+#text {
+    font-size: 50px;
+    color: white;
+    margin: auto;
+    width: 255px;
+    margin-bottom: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.feedbacksdiv, .main-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newDiv, #make-feedback {
+    min-height: 200px;
+    width: 61%;
+    margin: 30px;
+    background: #ffe45c;
+    border-radius: 40px;
+}
+
+#make-feedback {
+    height: 200px;
+}
+
+.main-div {
+    width: 100%;
+}
+
+.image {
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.stars {
+    position: relative;
+    top: -125px;
+    left: 440px;
+    font-size: 40px;
+    color: #fdf107;
+    text-shadow:-1px 0px 0px black,1px 0px 0px black,0px -1px 0px black,0px 1px 0px black;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 0;
+
+}
+
+#inp {
+    background: #ffe45c;
+    outline: none;
+    color: #ffe45c;
+    width: 635px;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 0;
+    pointer-events: auto;
+    text-shadow:-1px 0px 0px black,1px 0px 0px black,0px -1px 0px black,0px 1px 0px black;
+    color: white;
+    resize: none;
+    letter-spacing: 1px;
+}
+
+#inp::placeholder {text-shadow: none;}
+
+#select-div {
+    text-align: center;   
+    margin: 30px;  
+}
+
+#select-sort {
+    background-color: #f2dd55;
+    font-size: 20px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 10px;
+    position: relative;
+    top: -85px;
+}
+
+.div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 15px;
+}
+
+.rating {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#submit {   
+    background: #40d276;
+    color: white;
+    border: none;
+    width: 120px;
+    height: 35px;
+    border-radius: 8%;
+    opacity: 0.5;
+}
+
+#submit:active {
+    background: #1aa34c
+}
+
+#rate {
+    color: white;
+    font-size: 27px;
+    text-shadow: -1px 0px 0px black,1px 0px 0px black,0px -1px 0px black,0px 1px 0px black;
+}
+
+#divinp {
+    border: 3px gray solid;
+    margin: auto;
+    width: 640px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.ratingP {
+    font-size: 40px;
+    margin-top: 0px;
+    color: #fdf107;
+}
+
+.usernameP {
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.feedbackP {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2px;
+    height: 100%;
+    word-break: break-all;
+    white-space: normal;
+}
+
+.feedback-date {
+    font-size: 23px;
+    color: lightgray;
+    text-align: end; 
+    width: 90%;
+    margin: 0;
+}
+
+.flexDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.feedbackDiv {
+    border: 3px gray solid;
+    margin: auto;
+    width: 640px;
+    max-height: 70px;
+    padding: 2px;
+}
+
+.newDiv {
+    color: white;
+    text-shadow: -1px 0px 0px black,1px 0px 0px black,0px -1px 0px black,0px 1px 0px black;
+    margin-top: 30px;
+}
+
+.deleteButton {
+    user-select: none;
+    background: #fc4747;
+    height: 45px;
+    width: 45px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    pointer-events: auto;
+    margin-top: 10px;
+}
+
+.deleteButton:hover {
+    background: #fc6a6a;
+}
+
+.deleteButton:active {
+    background: #9c1919;
+}
+
+#sucTasks {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 0.1px solid black;
+    background: #1aa34c;
+    color: white;
+}
+
+#sucTasks:hover {
+    background: #2ea65a;
+}
+
+#sucTasks:active {
+    background: #068a36;
+}
+
+#feedback {
+    background: #fc4747;
+    color: white;
+    border: 0.1px solid black;
+    position: relative;
+    top: -30px;
+}
+
+#feedback:hover {
+    background: #fc6a6a;
+}
+
+#feedback:active {
+    background: #9c1919;
+}
+
+.panel {
+    background: #95ab05;
+    width: 170px;
+    position: fixed;
+    height: 240px;
+    top: 15px;
+    transition-duration: 0.8s;
+    left: -170px;
+    margin: 1px;
+}
+
+.panel > button {margin-left: 5px;}
+
+.panel > button > a {
+    text-decoration: none;
+    color: white;
+}
+
+#options-btn {
+    background: #2eb832;
+    border: none;
+    position: relative;
+    top: -40px;
+    transition-duration: 0.8s;
+    left: 120px;
+    font-size: 45px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}

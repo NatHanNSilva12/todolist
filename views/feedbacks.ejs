@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks</title>
+    <link rel="stylesheet" href="/public/css/feedbacks.css">
+    <script type="module" src="/public/js/feedbacks.js"></script>
+</head>
+<body>
+    <p id="feedbacks" style="display: none;"><%= arr %></p>
+    <div class="cap">
+        <div>
+            <div>
+                <p id="text">Feedbacks</p>
+            </div>
+            <div id="select-div">
+                <select name="sort" id="select-sort">
+                    <option value="length">Por tamanho</option>
+                    <option value="rating">Por avaliação</option>
+                    <option value="date">Por data</option>
+                </select>
+            </div>
+        </div>
+        <div class="feedbacksdiv">
+            <div id="make-feedback">
+                <img src="/public/Images/user.jpg" alt="user" width="80" height="80" class="image">
+                <p class="stars">☆☆☆☆☆</p>
+                <div class="container">
+                    <form action="/formPost" class="form" method="post">
+                        <input id="user" name="username" style="display: none;"></input>
+                        <input type="text" style="display: none;" name="date" value="<%= JSON.stringify(new Date()).substring(1, 11) %>">
+                        <div id="divinp"> 
+                            <textarea id="inp" type="text" name="feedback" placeholder="Enter your feedback"></textarea>
+                        </div>
+                        <div class="div">
+                            <div class="rating">
+                                <label id="rate" for="Rating">Avaliação:</label>
+                                <input type="range" max="5" min="1" step="1" name="rating" id="rating">
+                            </div>
+                            <div class="submitdiv">
+                                <input type="submit" id="submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>    
+            </div>    
+        </div>
+    </div>
+    <div class="panel">
+        <button id="sucTasks"><a href="/succes-tasks">Tarefas feitas</a></button><br>
+        <button id="feedback"><a href="/to-do-list">Voltar</a></button>
+        <button id="options-btn">≡</button>
+    </div>
+</body>
+</html>

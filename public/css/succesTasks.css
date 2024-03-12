@@ -1,0 +1,136 @@
+body {
+    background: #f2dd55;
+    width: 1300px;
+}
+
+.cap {
+    background: #d6cd24;
+    position: relative;
+    left: 15%;
+    height: 100%;
+    padding-bottom: 10px;
+    width: 85%;
+    margin-right: 1px;
+}
+
+#text {
+    font-size: 50px;
+    color: white;
+    margin: auto;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 370px;
+}
+
+.succesdiv > div {
+    height: 200px;
+    width: 61%;
+    left: 15%;
+    margin: 30px;
+    position: relative;
+    background: #ffe45c;
+    border-radius: 40px;
+}
+
+.deleteButton {
+    user-select: none;
+    background: #fc4747;
+    height: 45px;
+    width: 45px;
+    position: relative;
+    left: 90%;
+    top: 6px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.deleteButton:hover {
+    background: #fc6a6a;
+}
+
+.deleteButton:active {
+    background: #9c1919;
+}
+
+.newPTime {
+    font-size: 30px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 0px;
+    position: relative;
+    top: -40px;
+    pointer-events: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.newP {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-size: 140px;
+    margin: 10px;
+    position: relative;
+    top: -80px;
+}
+
+#sucTasks {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 0.1px solid black;
+    background: #fc4747;
+    color: white;
+}
+
+#sucTasks:hover {
+    background: #fc6a6a;
+}
+
+#sucTasks:active {
+    background: #9c1919;
+}
+
+#feedback {
+    background: #4139e3;
+    color: white;
+    border: 0.1px solid black;
+}
+
+#feedback:hover {
+    background: #106fc2;
+}
+
+#feedback:active {
+    background: #033f73;
+}
+
+.panel {
+    background: #95ab05;
+    width: 170px;
+    position: fixed;
+    height: 240px;
+    top: 15px;
+    transition-duration: 0.8s;
+    left: -170px;
+    margin: 1px;
+}
+
+.panel > button {margin-left: 5px;}
+
+.panel > button > a {
+    text-decoration: none;
+    color: white;
+}
+
+#options-btn {
+    background: #2eb832;
+    border: none;
+    position: relative;
+    top: -59px;
+    transition-duration: 0.8s;
+    left: 170px;
+    font-size: 45px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
